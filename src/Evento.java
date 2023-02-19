@@ -1,28 +1,10 @@
-class Evento {
+public class Evento {
 
-    private final String fecha;
-    private final String hora;
-    private final String lugar;
-    private final int cantidad;
-    private final double costo;
-
-    public Evento(String fecha, String hora, String lugar, int cantidad, double costo){
-        this.fecha = fecha;
-        this.hora = hora;
-        this.lugar = lugar;
-        this.cantidad = cantidad;
-        this.costo = costo;
-    }
-
-    public Evento() {
-
-        cantidad = 0;
-        costo = 0;
-        lugar = "cine";
-        hora = "12:00";
-        fecha = "2/2/20";
-
-    }
+    private String fecha;
+    private String hora;
+    private  String lugar;
+    private  int cantidad;
+    private  double costo;
 
 
     public String getFecha() {
@@ -44,24 +26,24 @@ class Evento {
     public double getCosto() {
         return costo;
     }
-    public String setFecha() {
-        return fecha;
+    public void setFecha(String fecha) {
+        this.fecha = fecha;
     }
 
-    public String setHora() {
-        return hora;
+    public void setHora(String hora) {
+        this.hora = hora;
     }
 
-    public String setLugar() {
-        return lugar;
+    public void setLugar(String lugar) {
+        this.lugar = lugar;
     }
 
-    public int setCantidad() {
-        return cantidad;
+    public void setCantidad(int capacidad) {
+        cantidad = capacidad;
     }
 
-    public double setCosto() {
-        return costo;
+    public void setCosto(double costo) {
+        this.costo = costo;
     }
 
 }
