@@ -6,10 +6,6 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         Evento evento = new Evento();
 
-        String a = "10/10/10";
-        evento.setFecha(a);
-        System.out.println(evento.getFecha());
-
         int opc;
         do {
             System.out.println("Menu\n 1.- Agregar\n 2.- Editar\n 3.- Mostrar\n 4.- Salir");
@@ -22,8 +18,8 @@ public class Main {
 
                     int opc2;
                     do{
-                        System.out.println("Que campo deseas Agregar?");
-                        System.out.println(" 1.- Fecha\n 2.- Hora\n 3.- Lugar\n 4.- Capacidad\n 5.- Costo Boleto\n 6.- Regresar");
+                        System.out.println("Ingresa los datos");
+
                         opc2 = sc.nextInt();
 
                         switch (opc2) {
